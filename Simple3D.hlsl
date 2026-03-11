@@ -134,7 +134,7 @@ float4 PS(VS_OUT inData) : SV_Target
 		ambientTerm = ambentFactor * diffuseColor;
 	}
 	
-	//float4 color = diffuseTerm + specularCol + ambientTerm;
-	float4 color = diffuseTerm + ambientTerm;
+	float4 color = diffuseTerm + specularCol + ambientTerm;
+	//float4 color = diffuseTerm + ambientTerm;
 	return color;
 }
